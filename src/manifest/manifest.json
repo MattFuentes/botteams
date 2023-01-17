@@ -1,0 +1,111 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "3f12cbc0-9606-11ed-97d3-577cbcf6a01a",
+  "version": "{{VERSION}}",
+  "packageName": "conversationalbot",
+  "developer": {
+    "name": "Matias Fuentes",
+    "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
+    "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "NewMaCS",
+    "full": "NewMaCS"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "713dd040-9606-11ed-97d3-577cbcf6a01a",
+      "name": "About NewMaCS",
+      "contentUrl": "https://{{PUBLIC_HOSTNAME}}/newMaCsBot/aboutNewMaCs.html",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "3f12cbc0-9606-11ed-97d3-577cbcf6a01a",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupchat"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            },
+            {
+              "title": "Who am I?",
+              "description": "Shows information about your Teams user"
+            },
+            {
+              "title": "Mention me",
+              "description": "Let the bot @mention you"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "3f12cbc0-9606-11ed-97d3-577cbcf6a01a",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "newMaCsMessageExtension",
+          "title": "NewMaCS Message Extension",
+          "description": "Description of NewMaCS Message Extension",
+          "initialRun": true,
+          "parameters": [
+            {
+              "name": "parameter",
+              "description": "Description of the parameter",
+              "title": "Parameter"
+            }
+          ],
+          "type": "query"
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{PUBLIC_HOSTNAME}}"
+  ],
+  "showLoadingIndicator": false,
+  "localizationInfo": {
+    "defaultLanguageTag": "en-us",
+    "additionalLanguages": [
+      {
+        "languageTag": "es-es",
+        "file": "es-es.json"
+      }
+    ]
+  }
+}

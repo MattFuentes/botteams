@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.Localization.schema.json",
+  "name.short": "NewMaCS",
+  "name.full": "NewMaCS",
+  "description.short": "TODO: add short description here",
+  "description.full": "TODO: add full description here",
+  "staticTabs[0].name": "About NewMaCS",
+  "bots[0].commandLists[0].commands[0].title": "Help",
+  "bots[0].commandLists[0].commands[0].description": "Shows help information",
+  "bots[0].commandLists[0].commands[1].title": "Who am I?",
+  "bots[0].commandLists[0].commands[1].description": "Shows information about your Teams user",
+  "bots[0].commandLists[0].commands[2].title": "Mention me",
+  "bots[0].commandLists[0].commands[2].description": "Let the bot @mention you",
+  "composeExtensions[0].commands[0].title": "NewMaCS Message Extension",
+  "composeExtensions[0].commands[0].description": "Description of NewMaCS Message Extension",
+  "composeExtensions[0].commands[0].parameters[0].title": "Parameter",
+  "composeExtensions[0].commands[0].parameters[0].description": "Description of the parameter"
+}

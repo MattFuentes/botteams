@@ -1,0 +1,111 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "3f12cbc0-9606-11ed-97d3-577cbcf6a01a",
+  "version": "0.0.1",
+  "packageName": "conversationalbot",
+  "developer": {
+    "name": "Matias Fuentes",
+    "websiteUrl": "https://94f7-2803-9800-9097-82cf-19d5-246c-2f0a-ee48.ngrok.io",
+    "privacyUrl": "https://94f7-2803-9800-9097-82cf-19d5-246c-2f0a-ee48.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://94f7-2803-9800-9097-82cf-19d5-246c-2f0a-ee48.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "NewMaCS",
+    "full": "NewMaCS"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "713dd040-9606-11ed-97d3-577cbcf6a01a",
+      "name": "About NewMaCS",
+      "contentUrl": "https://94f7-2803-9800-9097-82cf-19d5-246c-2f0a-ee48.ngrok.io/newMaCsBot/aboutNewMaCs.html",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "3f12cbc0-9606-11ed-97d3-577cbcf6a01a",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupchat"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            },
+            {
+              "title": "Who am I?",
+              "description": "Shows information about your Teams user"
+            },
+            {
+              "title": "Mention me",
+              "description": "Let the bot @mention you"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "3f12cbc0-9606-11ed-97d3-577cbcf6a01a",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "newMaCsMessageExtension",
+          "title": "NewMaCS Message Extension",
+          "description": "Description of NewMaCS Message Extension",
+          "initialRun": true,
+          "parameters": [
+            {
+              "name": "parameter",
+              "description": "Description of the parameter",
+              "title": "Parameter"
+            }
+          ],
+          "type": "query"
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "94f7-2803-9800-9097-82cf-19d5-246c-2f0a-ee48.ngrok.io"
+  ],
+  "showLoadingIndicator": false,
+  "localizationInfo": {
+    "defaultLanguageTag": "en-us",
+    "additionalLanguages": [
+      {
+        "languageTag": "es-es",
+        "file": "es-es.json"
+      }
+    ]
+  }
+}
